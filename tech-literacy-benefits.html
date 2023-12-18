@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ... other head elements ... -->
+
+<style>
+  /* ... existing styles ... */
+
+  /* Hamburger Menu Styles */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Width of the hamburger */
+    height: 25px; /* Total height of the hamburger */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .hamburger-menu div {
+    width: 100%;
+    height: 3px; /* Height of each line */
+    background-color: #ffd700; /* Yellow */
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  /* ... other styles ... */
+</style>
+
+<div class="header">
+  <!-- Hamburger Menu Icon -->
+  <button class="hamburger-menu" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  <!-- ... rest of the header content ... -->
+</div>
+
+<div class="header">
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    ☰
+  </div>
+  <h1>Technique</h1>
+  <p>Access Tech Literacy at the University of Michigan.</p>
+  <!-- ... search bar and other header content ... -->
+</div>
+
+<div class="nav-links">
+  <!-- Navigation Links -->
+  <a href="index.html">Home</a>
+  <a href="tech-literacy-benefits.html">Tech Literacy Benefits</a>
+  <!-- ... other navigation links if necessary ... -->
+</div>
+
+<!-- ... rest of the home page content ... -->
+
+
+<script>
+  function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('nav-active');
+  }
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technique - Access Tech Literacy at the University of Michigan</title>
+<style>
+  body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Header Styles */
+  .header {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+
+  .header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .search-button {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffd700; /* Yellow */
+    color: #0055a4; /* Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .search-button:hover {
+    background-color: #e0c200; /* Darker yellow */
+    color: #003d7a; /* Darker blue */
+  }
+
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+
+  th {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td a {
+    color: #0055a4; /* Blue */
+    text-decoration: none;
+  }
+
+  td a:hover {
+    text-decoration: underline;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Footer Styles */
+  .footer {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Responsive Table */
+  @media screen and (max-width: 600px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* Section Title */
+  .section-title {
+    color: #0055a4; /* Blue */
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 15px;
+  }
+
+  /* Content Styles */
+  .content {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ... head elements (ensure they are consistent with the home page) ... -->
+</head>
+<body>
+
+<div class="header">
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    ☰
+  </div>
+  <h1>Technique</h1>
+  <p>Access Tech Literacy at the University of Michigan.</p>
+</div>
+
+<div class="nav-links">
+  <!-- Navigation Links -->
+  <a href="index.html">Home</a>
+  <a href="tech-literacy-benefits.html">Tech Literacy Benefits</a>
+  <!-- ... other navigation links if necessary ... -->
+</div>
+
+<script>
+  function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('nav-active');
+  }
+</script>
+</body>
+</html>
+
+<div class="header">
+    <h1>Technique</h1>
+    <p>Access Tech Literacy at the University of Michigan.</p>
+    <input type="text" class="search-bar" placeholder="Resources, support, advice...">
+    <button class="search-button" onclick="performSearch()">SEARCH</button>
+  </div>
+
+ <!-- Page 3: Tech Literacy Benefits -->
+<div class="content">
+    <h2 class="section-title">Tech Literacy Benefits</h2>
+    
+    <p>High-level overview of tech literacy benefits including interdisciplinary knowledge, career paths, and collaborations.</p>
+    
+    <p>Examples of career paths/collabs:</p>
+    <ul>
+      <li>Kate Crawford's Atlas of AI - <a href="https://www.youtube.com/watch?v=KcefG-0InLE&feature=youtu.be">Watch Video</a></li>
+      <li>Algorithms of Oppression - <a href="https://tminstituteldf.org/tmi-briefs-algorithms-of-oppression/">Learn More</a></li>
+    </ul>
+  
+    <p>Articles:</p>
+    <ul>
+      <li>
+        <a href="https://www.insidehighered.com/news/students/careers/2023/05/04/measuring-outcomes-income">
+          Income disparity between majors + cutting programs
+        </a>
+      </li>
+      <li>
+        This 2022 AP English Language and Composition Essay Prompt includes 6 good sources that talk about the topic of STEM education and humanities education:
+      </li>
+    </ul>
+  </div>
+  <div class="content"></div>
+
+  <div class="footer">
+    <p>&copy; 2023 Technique</p>
+  </div>
