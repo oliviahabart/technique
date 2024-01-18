@@ -1,57 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ... other head elements ... -->
 
-<style>
-  /* ... existing styles ... */
+  <style>
+    .nav-links {
+  background-color: #0055a4; /* Matching blue background */
+  padding: 10px 0; /* Adjust padding as needed */
+  text-align: center; /* Center-align the links */
+}
 
-  /* Hamburger Menu Styles */
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px; /* Width of the hamburger */
-    height: 25px; /* Total height of the hamburger */
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-  }
+.nav-links a {
+  color: #ffd700; /* Initial color of the links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Add some padding for better clickability */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
 
-  .hamburger-menu div {
-    width: 100%;
-    height: 3px; /* Height of each line */
-    background-color: #ffd700; /* Yellow */
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-  }
+.nav-links a:hover {
+  color: #e0c200; /* Color changes on hover */
+}
 
-  /* ... other styles ... */
-</style>
-
-<div class="header">
-  <!-- Hamburger Menu Icon -->
-  <button class="hamburger-menu" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </button>
-  <!-- ... rest of the header content ... -->
-</div>
-
-<div class="header">
-  <!-- Hamburger Menu Icon -->
-  <div class="hamburger-menu" onclick="toggleMenu()">
-    ☰
-  </div>
-  <h1>Technique</h1>
-  <p>Access Tech Literacy at the University of Michigan.</p>
-  <!-- ... search bar and other header content ... -->
-</div>
+  </style>
 
 <div class="nav-links">
   <!-- Navigation Links -->
@@ -199,6 +168,42 @@
     padding: 20px;
     background-color: #f0f0f0;
   }
+  .resource-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.resource-box {
+  width: 150px;
+  height: 150px;
+  background-color: #0055a4; /* Your desired color */
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none; /* Removes underline from links */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  transition: transform 0.3s ease; /* Smooth animation on hover */
+}
+
+.resource-box:hover {
+  transform: translateY(-5px); /* Lifts the box a bit on hover */
+}
+
+.resource-icon {
+  padding-top: 20px; /* Space from top */
+}
+
+.resource-icon img {
+  width: 80px; /* Or your desired size */
+  height: auto;
+}
+
+.resource-title {
+  margin-top: 10px; /* Space between icon and text */
+  font-size: 1.2em;
+}
+
 </style>
 </head>
 <body>
@@ -213,7 +218,37 @@
 <!-- Replace these placeholders with actual content sections -->
 <div class="content">
   <h2 class="section-title">Popular Resource Types</h2>
-  <!-- Cards for resources would go here -->
+  <div class="resource-container">
+    <a href="classes.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Classes (You'll replace this with an actual image) -->
+        <img src="classes_icon.png" alt="Classes">
+      </div>
+      <div class="resource-title">Classes</div>
+    </a>
+    <a href="programs.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Programs -->
+        <img src="path-to-programs-icon.png" alt="Programs">
+      </div>
+      <div class="resource-title">Programs</div>
+    </a>
+    <a href="tools.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Tools -->
+        <img src="path-to-tools-icon.png" alt="Tools">
+      </div>
+      <div class="resource-title">Tools</div>
+    </a>
+    <a href="clubs.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Clubs -->
+        <img src="path-to-clubs-icon.png" alt="Clubs">
+      </div>
+      <div class="resource-title">Clubs</div>
+    </a>
+  </div>
+  
 </div>
 <!-- Page 1: Resources for Upskilling / Tech Literacy at U-M -->
 <div class="content">
