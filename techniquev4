@@ -222,7 +222,8 @@
     <a href="classes.html" class="resource-box">
       <div class="resource-icon">
         <!-- Icon for Classes (You'll replace this with an actual image) -->
-        <img src="classes_icon.png" alt="Classes">
+        <img src= https://raw.githubusercontent.com/oliviahbart/technique/main/icons/classes_icon.png" alt="Classes">
+ alt="Classes">
       </div>
       <div class="resource-title">Classes</div>
     </a>
