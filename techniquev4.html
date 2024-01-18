@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    .nav-links {
+  background-color: #0055a4; /* Matching blue background */
+  padding: 10px 0; /* Adjust padding as needed */
+  text-align: center; /* Center-align the links */
+}
+
+.nav-links a {
+  color: #ffd700; /* Initial color of the links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Add some padding for better clickability */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+  color: #e0c200; /* Color changes on hover */
+}
+
+  </style>
+
+<div class="nav-links">
+  <!-- Navigation Links -->
+  <a href="index.html">Home</a>
+  <a href="tech-literacy-benefits.html">Tech Literacy Benefits</a>
+  <!-- ... other navigation links if necessary ... -->
+</div>
+
+<!-- ... rest of the home page content ... -->
+
+
+<script>
+  function toggleMenu() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('nav-active');
+  }
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technique - Access Tech Literacy at the University of Michigan</title>
+<style>
+  body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Header Styles */
+  .header {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+
+  .header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .search-button {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffd700; /* Yellow */
+    color: #0055a4; /* Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .search-button:hover {
+    background-color: #e0c200; /* Darker yellow */
+    color: #003d7a; /* Darker blue */
+  }
+
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+
+  th {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td a {
+    color: #0055a4; /* Blue */
+    text-decoration: none;
+  }
+
+  td a:hover {
+    text-decoration: underline;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Footer Styles */
+  .footer {
+    background-color: #0055a4; /* Blue */
+    color: #ffd700; /* Yellow */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Responsive Table */
+  @media screen and (max-width: 600px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+
+  /* Section Title */
+  .section-title {
+    color: #0055a4; /* Blue */
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 15px;
+  }
+
+  /* Content Styles */
+  .content {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .resource-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.resource-box {
+  width: 150px;
+  height: 150px;
+  background-color: #0055a4; /* Your desired color */
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none; /* Removes underline from links */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  transition: transform 0.3s ease; /* Smooth animation on hover */
+}
+
+.resource-box:hover {
+  transform: translateY(-5px); /* Lifts the box a bit on hover */
+}
+
+.resource-icon {
+  padding-top: 20px; /* Space from top */
+}
+
+.resource-icon img {
+  width: 80px; /* Or your desired size */
+  height: auto;
+}
+
+.resource-title {
+  margin-top: 10px; /* Space between icon and text */
+  font-size: 1.2em;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Technique</h1>
+  <p>Access Tech Literacy at the University of Michigan.</p>
+  <input type="text" class="search-bar" placeholder="Resources, support, advice...">
+  <button class="search-button" onclick="performSearch()">SEARCH</button>
+</div>
+
+<!-- Replace these placeholders with actual content sections -->
+<div class="content">
+  <h2 class="section-title">Popular Resource Types</h2>
+  <div class="resource-container">
+    <a href="classes.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Classes (You'll replace this with an actual image) -->
+        <img src="classes_icon.png" alt="Classes">
+      </div>
+      <div class="resource-title">Classes</div>
+    </a>
+    <a href="programs.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Programs -->
+        <img src="path-to-programs-icon.png" alt="Programs">
+      </div>
+      <div class="resource-title">Programs</div>
+    </a>
+    <a href="tools.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Tools -->
+        <img src="path-to-tools-icon.png" alt="Tools">
+      </div>
+      <div class="resource-title">Tools</div>
+    </a>
+    <a href="clubs.html" class="resource-box">
+      <div class="resource-icon">
+        <!-- Icon for Clubs -->
+        <img src="path-to-clubs-icon.png" alt="Clubs">
+      </div>
+      <div class="resource-title">Clubs</div>
+    </a>
+  </div>
+  
+</div>
+<!-- Page 1: Resources for Upskilling / Tech Literacy at U-M -->
+<div class="content">
+    <h2 class="section-title">Resources for Upskilling / Tech Literacy at U-M</h2>
+    <table>
+      <tr>
+        <th>Resource</th>
+        <th>Link</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Digital humanities department</td>
+        <td><a href="https://www.digitalstudies.umich.edu/digital-ideas/2023.html">Visit</a></td>
+        <td>Explore digital humanities studies.</td>
+      </tr>
+      <!-- Repeat rows for each resource from the PDF -->
+        <td>Nexus at U-M (AI + Machine learning program 26 weeks)</td>
+        <td><a href="https://bootcamp.engin.umich.edu/programs/ai-machine-learning">Visit</a></td>
+        <td>Intensive AI and machine learning program for professionals.</td>
+      </tr>
+      <tr>
+        <td>Coursera - Michigan online courses like Python for Everybody</td>
+        <td><a href="https://www.coursera.org/specializations/python">Visit</a></td>
+        <td>Online specializations and courses in Python programming.</td>
+      </tr>
+      <tr>
+        <td>MIDAS initiative (Michigan Institute for Data Science)</td>
+        <td><a href="https://midas.umich.edu/">Visit</a></td>
+        <td>Data science research and education initiatives.</td>
+      </tr>
+      <tr>
+        <td>Business + Tech</td>
+        <td><a href="https://michiganross.umich.edu/about/business-tech">Visit</a></td>
+        <td> Tech literacy initiative (events).</td>
+      </tr>
+      <tr>
+        <td>SI 110 (4 credits)</td>
+        <td><a href="https://www.si.umich.edu/programs/courses/spring-and-summer-courses">Visit</a></td>
+        <td> Introduction to Information Studies.</td>
+      </tr>
+      <tr>
+        <td>SI 106 (4 credits)</td>
+        <td><a href="https://www.si.umich.edu/programs/courses/106">Visit</a></td>
+        <td> Intro to Programming.</td>
+      </tr>
+      <tr>
+        <td>Digital Media Commons (DMC) at Duderstadt Center</td>
+        <td><a href="https://www.dc.umich.edu/2023/10/20/live-chat-service-now-available/">Visit</a></td>
+        <td>Hosts workshops (e.g. Aldrino Workshop in November). Opportunity to talk with DMC staff to find resources </td>
+      </tr>
+      <tr>
+        <td>Girls Who Code at UMich</td>
+        <td></td>
+        <td>Offer introductory Python programming courses for high school girls.</td>
+      </tr>
+      <tr>
+        <td>Learn how to use Office software</td>
+        <td><a href="https://its.umich.edu/communication/collaboration/microsoft-office-365/support">Visit</a></td>
+        <td>Microsoft Office 365 Support / U-M Information and Technology Services.</td>
+      </tr>
+      <tr>
+        <td>Free access to Adobe and Adobe training courses for UM students</td>
+        <td></td>
+        <td>Currently no link provided.</td>
+      </tr>
+      <tr>
+        <td>Teaching and Technology Collaborative</td>
+        <td><a href="https://ttc.mivideo.it.umich.edu/">Visit</a></td>
+        <td>Resources and support for teaching with technology at U-M.</td>
+      </tr>
+      <tr>
+        <td>UM Software Carpentries</td>
+        <td><a href="https://umich.us18.list-manage.com/track/click?u=5a17a7c17c53aa30bcbfa592f&id=92318083b9&e=b26e8fd65e">Visit</a></td>
+        <td>Beginner coding workshop from 12/13-12/14: application needed.</td>
+      </tr>      
+      <!-- ... more rows for other resources ... -->
+    </table>
+  </div>
+  
+    </table>
+  </div>
+  
+  <!-- Page 2: Outside U-M Resources -->
+  <div class="content">
+    <h2 class="section-title">Outside U-M Resources</h2>
+    <table>
+      <tr>
+        <th>Resource</th>
+        <th>Link</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>MOOCs from top universities</td>
+        <td><a href="https://www.classcentral.com/report/mooc-platforms/">Visit</a></td>
+        <td>Access a variety of online courses and programs.</td>
+      </tr>
+      <tr>
+        <td>EdX online bachelors, masters, and bootcamps</td>
+        <td><a href="https://www.edx.org">Visit</a></td>
+        <td>Online bachelor's, master's, and bootcamp programs related to tech skills.</td>
+      </tr>
+      <tr>
+        <td>MIT OpenCourseWare</td>
+        <td><a href="https://ocw.mit.edu/">Visit</a></td>
+        <td>Includes many tech-related STEM courses available for free.</td>
+      </tr>      
+      <!-- Repeat rows for each resource from the PDF -->
+    </table>
+  </div>
+
+  <!-- Page 3: Tech Literacy Benefits -->
+<div class="content">
+    <h2 class="section-title">Tech Literacy Benefits</h2>
+    
+    <p>High-level overview of tech literacy benefits including interdisciplinary knowledge, career paths, and collaborations.</p>
+    
+    <p>Examples of career paths/collabs:</p>
+    <ul>
+      <li>Kate Crawford's Atlas of AI - <a href="https://www.youtube.com/watch?v=KcefG-0InLE&feature=youtu.be">Watch Video</a></li>
+      <li>Algorithms of Oppression - <a href="https://tminstituteldf.org/tmi-briefs-algorithms-of-oppression/">Learn More</a></li>
+    </ul>
+  
+    <p>Articles:</p>
+    <ul>
+      <li>
+        <a href="https://www.insidehighered.com/news/students/careers/2023/05/04/measuring-outcomes-income">
+          Income disparity between majors + cutting programs
+        </a>
+      </li>
+      <li>
+        This 2022 AP English Language and Composition Essay Prompt includes 6 good sources that talk about the topic of STEM education and humanities education:
+      </li>
+    </ul>
+  </div>
+  <div class="content"></div>
+
+  <div class="footer">
+    <p>&copy; 2023 Technique</p>
+  </div>
