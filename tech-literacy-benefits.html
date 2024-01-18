@@ -4,73 +4,25 @@
 <!-- ... other head elements ... -->
 
 <style>
-  /* ... existing styles ... */
 
-  /* Hamburger Menu Styles */
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px; /* Width of the hamburger */
-    height: 25px; /* Total height of the hamburger */
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  .nav-links {
+background-color: #0055a4; /* Matching blue background */
+padding: 10px 0; /* Adjust padding as needed */
+text-align: center; /* Center-align the links */
+}
 
-  .hamburger-menu div {
-    width: 100%;
-    height: 3px; /* Height of each line */
-    background-color: #ffd700; /* Yellow */
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-  }
+.nav-links a {
+color: #ffd700; /* Initial color of the links */
+text-decoration: none; /* Remove underline */
+padding: 10px; /* Add some padding for better clickability */
+transition: color 0.3s; /* Smooth color transition on hover */
+}
 
-  /* ... other styles ... */
+.nav-links a:hover {
+color: #e0c200; /* Color changes on hover */
+}
+
 </style>
-
-<div class="header">
-  <!-- Hamburger Menu Icon -->
-  <button class="hamburger-menu" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </button>
-  <!-- ... rest of the header content ... -->
-</div>
-
-<div class="header">
-  <!-- Hamburger Menu Icon -->
-  <div class="hamburger-menu" onclick="toggleMenu()">
-    ☰
-  </div>
-  <h1>Technique</h1>
-  <p>Access Tech Literacy at the University of Michigan.</p>
-  <!-- ... search bar and other header content ... -->
-</div>
-
-<div class="nav-links">
-  <!-- Navigation Links -->
-  <a href="index.html">Home</a>
-  <a href="tech-literacy-benefits.html">Tech Literacy Benefits</a>
-  <!-- ... other navigation links if necessary ... -->
-</div>
-
-<!-- ... rest of the home page content ... -->
-
-
-<script>
-  function toggleMenu() {
-    var navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('nav-active');
-  }
-</script>
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -199,27 +151,12 @@
     padding: 20px;
     background-color: #f0f0f0;
   }
-</style>
-</head>
-<body><!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- ... head elements (ensure they are consistent with the home page) ... -->
-</head>
-<body>
 
-<div class="header">
-  <!-- Hamburger Menu Icon -->
-  <div class="hamburger-menu" onclick="toggleMenu()">
-    ☰
-  </div>
-  <h1>Technique</h1>
-  <p>Access Tech Literacy at the University of Michigan.</p>
-</div>
+</style>
 
 <div class="nav-links">
   <!-- Navigation Links -->
-  <a href="index.html">Home</a>
+  <a href="techniquev4.html">Home</a>
   <a href="tech-literacy-benefits.html">Tech Literacy Benefits</a>
   <!-- ... other navigation links if necessary ... -->
 </div>
